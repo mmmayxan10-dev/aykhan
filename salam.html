@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="eng">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kartlar</title>
+  <style>
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:#f0f0f0;
+      color:#333;
+      padding:40px 20px;
+      display:flex;
+      justify-content:center;
+    }
+    .besiktas{
+      width:100%;
+      max-width:1100px;
+      text-align:center;
+    }
+
+    h1{
+      margin:0 0 10px 0;
+      font-size:32px;
+      font-weight:bold;
+      color:#444;
+    }
+
+    .selam{
+      font-size:14px;
+      color:#666;
+      max-width:700px;
+      margin:0 auto 40px auto;
+      line-height:1.4;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:1fr 1fr 1fr;
+      gap:25px 30px;
+      align-items:start;
+      justify-items:center;
+    }
+
+    .ronaldo, .messi{display:flex;flex-direction:column;gap:25px}
+
+    .kart{
+      background:#fff;
+      width:100%;
+      max-width:330px;
+      border-radius:10px;
+      box-shadow:0 10px 24px rgba(0,0,0,0.08);
+      padding:20px;
+      text-align:left;
+      position:relative;
+      min-height:140px;
+    }
+
+    .xett{
+      height:5px;
+      width:70px;
+      margin:-20px 0 12px 0;
+      border-radius:4px;
+    }
+
+    .yazi1{font-size:18px;font-weight:bold;margin:5px 0 8px 0;color:#222;}
+    .yazi2{font-size:13px;color:#666;line-height:1.4;}
+
+    .ikon{
+      position:absolute;
+      right:16px;
+      bottom:12px;
+      width:48px;
+      height:48px;
+      line-height:48px;
+      text-align:center;
+      font-size:20px;
+    }
+
+    .c1 .xett{background:#19ccba}
+    .c2 .xett{background:#9f2340;width:90px}
+    .c3 .xett{background:#275e9c}
+    .c4 .xett{background:#654811}
+
+    .messi .kart{transform:translateY(-12px)}
+
+    </style>
+</head>
+<body>
+
+  <div class="besiktas">
+    <h1>Reliable, efficient delivery<br><strong>Powered by Technology</strong></h1>
+    <p class="selam"></p>
+
+    <div class="grid">
+
+      <div class="ronaldo">
+        <div class="kart c1">
+          <div class="xett"></div>
+          <div class="yazi1">Supervisor</div>
+          <div class="yazi2">Monitors activity to identify project roadblocks</div>
+          <div class="ikon">🔍</div>
+        </div>
+      </div>
+
+  <div class="messi">
+        <div class="kart c2">
+          <div class="xett"></div>
+          <div class="yazi1">Team Builder</div>
+          <div class="yazi2">Scans our talent network to create the optimal team</div>
+          <div class="ikon">🏠</div>
+       </div>
+
+             <div class="kart c4">
+          <div class="xett"></div>
+          <div class="yazi1">Karma</div>
+          <div class="yazi2">Regularly evaluates our talent to ensure quality</div>
+          <div class="ikon">💡</div>
+        </div>
+      </div>
+
+                 <div class="ronaldo">
+        <div class="kart c3">
+          <div class="xett"></div>
+          <div class="yazi1">Calculator</div>
+          <div class="yazi2">Uses data from past projects to give better estimates</div>
+          <div class="ikon">📊</div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
